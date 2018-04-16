@@ -89,7 +89,7 @@
                         "lun": 1,
                         "createOption": "Empty"
                     }
-                ]
+                    ]
                 },
                 "networkProfile": {
                     "networkInterfaces": [
