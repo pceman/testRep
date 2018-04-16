@@ -75,17 +75,31 @@
                         "caching": "ReadWrite",
                         "createOption": "FromImage"
                     },
-                    "copy": [
-                        {
-                            "name": "dataDisks",
-                            "count": "[parameters('vmDiskCount')]",
-                            "input": {
-                                "diskSizeGB": "[parameters('vmDiskSize')]",
-                                "lun": "[copyIndex('dataDisks')]",
-                                "createOption": "Empty"
-                            }
-                        }
-                    ]
+
+
+
+                    "dataDisks": [
+                    {
+                    "diskSizeGB": 128,
+                    "lun": 0,
+                    "createOption": "Empty"
+                    },
+                    {
+                    "diskSizeGB": 128,
+                    "lun": 1,
+                    "createOption": "Empty"
+                    },
+                    {
+                    "diskSizeGB": 128,
+                    "lun": 2,
+                    "createOption": "Empty"
+                    },
+                    {
+                    "diskSizeGB": 128,
+                    "lun": 3,
+                    "createOption": "Empty"
+                    }
+                ]
                 },
                 "networkProfile": {
                     "networkInterfaces": [
