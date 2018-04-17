@@ -85,7 +85,19 @@
                                 "createOption": "Empty"
                             }
                         }
-                    ]
+                    ],
+                    "dataDisks": [
+                        {
+                          "diskSizeGB": 128,
+                          "lun": 2,
+                          "createOption": "Empty"
+                        },
+                        {
+                            "diskSizeGB": 128,
+                            "lun": 3,
+                            "createOption": "Empty"
+                          }
+                        ]                        
                 },
                 "networkProfile": {
                     "networkInterfaces": [
