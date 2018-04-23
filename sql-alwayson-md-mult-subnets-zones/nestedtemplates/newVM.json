@@ -99,8 +99,7 @@
                         {
                             "diskSizeGB": 128,
                             "lun": 4,
-                            "createOption": "Empty",
-                            "storageAccountType": "Standard_RAGRS"
+                            "createOption": "Empty"
                         },
                         {
                             "diskSizeGB": 128,
