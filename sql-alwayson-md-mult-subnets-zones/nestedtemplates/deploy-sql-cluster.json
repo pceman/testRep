@@ -302,10 +302,10 @@
                 },
                 "storageProfile": {
                     "imageReference": {
-                        "publisher": "[variables('imagePublisher')]",
-                        "offer": "[variables('imageOffer')]",
-                        "sku": "[variables('imageSKU')]",
-                        "version": "[variables('imageVersion')]"
+                        "publisher": "MicrosoftSQLServer",
+                        "offer": "SQL2016SP1-WS2016",
+                        "sku": "Enterprise",
+                        "version": "latest"
                     },
                     "osDisk": {
                         "name": "[concat(variables('vmNamePrefix'), 0, '-osdisk')]",
