@@ -317,7 +317,6 @@
                             "managedDisk": {
                                 "storageAccountType": "Premium_LRS"
                             }
-
                         },
                         {
                             "diskSizeGB": 128,
@@ -332,7 +331,7 @@
                             "lun": 2,
                             "createOption": "Empty",
                             "managedDisk": {
-                                "storageAccountType": "Standard_RAGRS"
+                                "storageAccountType": "Premium_LRS"
                             }                            
                         }
                     ]
