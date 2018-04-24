@@ -313,12 +313,21 @@
                         {
                             "diskSizeGB": 128,
                             "lun": 0,
-                            "createOption": "Empty"
+                            "createOption": "Empty",
+                            "managedDisk": {
+                                "storageAccountType": "Premium_LRS",
+                                "id": "[concat(variables('vmNamePrefix'), 0, '-disk0')]"
+                            }
+
                         },
                         {
                             "diskSizeGB": 128,
                             "lun": 1,
-                            "createOption": "Empty"
+                            "createOption": "Empty",
+                            "managedDisk": {
+                                "storageAccountType": "Standard_LRS",
+                                "id": "[concat(variables('vmNamePrefix'), 0, '-disk1')]"
+                            }                            
                         }
                     ]
                 },
